@@ -11,7 +11,7 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
         self.driver.get(f"{self.live_server_url}")
 
         self.expectations = [("ab", "Abricots Pelés"), ("orangi", "Orangina"), ("nut", "Nutella"), 
-        ("pom'p", "Pom'Potes (Pomme)"), ("extrê", "Extrême Chocolat"), ("q", "Quinoa Lentilles"), 
+        ("sai", "Sainte Maure"), ("extrê", "Extrême Chocolat"), ("q", "Quinoa Lentilles"), 
         ("ac", "Activia vanille"), ("velouté F", "Velouté Fruix"), ("c", "Camembert"), 
         ("bn", "BN goût chocolat")]
 
