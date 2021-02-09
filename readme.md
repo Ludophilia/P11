@@ -1,4 +1,4 @@
-# P10
+# P11
 
 ## Qu'est-ce que c'est ?
 
@@ -6,7 +6,7 @@
     <img src="illust/dsk_1.png"><br>
 </div>
 
-P10 consiste au déploiement de P8 sur une IAAS (Digital ocean...) et consitue le 10ème projet du parcours développeur d'application Python d'OpenClassrooms. 
+P11 consitue le 11ème projet du parcours développeur d'application Python d'OpenClassrooms et consiste en une amélioration du P8 avec **l'ajout d'une fonctionnalité d'autocomplétion des recherches.**  
 
 Pour rappel, P8 est une plateforme web pour amateurs de Nutella qui permet notamment : 
 - Le remplacement d'un aliment : entrez le nom de l'aliment dans le champ de recherche de la page d'acceuil, le site vous donnera un aliment de la même catégorie plus sain
@@ -34,4 +34,3 @@ Les données alimentaires indispensables à son bon fonctionnement sont gracieus
 ## Comment ça s'installe ?
 
 **Aucune installation est nécessaire**, l'app est accessible à l'adresse : https://purbeurre.space
-
