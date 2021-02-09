@@ -11,8 +11,8 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
         self.driver.get(f"{self.live_server_url}")
 
         self.expectations = [("ab", "Abricots Pelés"), ("orangi", "Orangina"), ("nut", "Nutella"), 
-        ("sai", "Sainte Maure"), ("extrê", "Extrême Chocolat"), ("q", "Quinoa Lentilles"), 
-        ("ac", "Activia vanille"), ("velouté F", "Velouté Fruix"), ("c", "Camembert"), 
+        ("sai", "Sainte Maure"), ("extrê", "Extrême Chocolat"), ("quinoa l", "Quinoa Lentilles"), 
+        ("ac", "Activia vanille"), ("velouté F", "Velouté Fruix"), ("cam", "Camembert"), 
         ("bn", "BN goût chocolat")]
 
         self.search_inputs = self.f("form.input-group > input"), self.f("form.input-group-fake > input")
@@ -63,6 +63,8 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
         print("\nTest 9 - (3/3) : Cliquer sur une suggestion du champ de suggestion mène-t-il bien à la page remplacement de ce produit ?\n")
 
         self.setMoreThingsUp()
+
+        time.sleep(2000)
 
         for search_target in ["form.input-group > input", "form.input-group-fake > input"]:
 
