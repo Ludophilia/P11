@@ -19,7 +19,9 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
 
     @tag("t9-p1")
     def test_if_the_autocomplete_feature_work_on_homepage_search_bar(self):
-                
+        
+        print("\nTest 9 - (1/3) : Les suggestions de produits apparaissent-elles au niveau du champ de recherche en fonction des inputs utilisateur ?\n")
+
         self.setMoreThingsUp()
 
         time.sleep(0.5)
@@ -35,6 +37,8 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
 
     @tag("t9-p2")
     def test_if_the_autocomplete_window_appear_and_disappear_when_the_user_puts_the_focus_in_and_out_the_search_in_put(self):
+
+        print("\nTest 9 - (2/3) : Le champ de suggestion disparait-il bien quand le champ de recherche perd le focus ? Réapparait-il bien quand on remet le focus ?\n")
 
         self.setMoreThingsUp()
 
@@ -56,6 +60,8 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
     @tag("t9-p3")
     def test_if_clicking_on_one_the_autocomplete_suggestion_lead_the_user_to_the_product(self):
         
+        print("\nTest 9 - (3/3) : Cliquer sur une suggestion du champ de suggestion mène-t-il bien à la page remplacement de ce produit ?\n")
+
         self.setMoreThingsUp()
 
         for search_target in ["form.input-group > input", "form.input-group-fake > input"]:

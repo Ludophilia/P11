@@ -29,3 +29,4 @@ script:
  - ./manage.py test tests.test6_save_function
  - ./manage.py test tests.test7_my_products_page
  - ./manage.py test tests.test8_legal_page
+ - ./manage.py test tests.test9_autocomplete_feature
