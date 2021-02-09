@@ -63,9 +63,7 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
         print("\nTest 9 - (3/3) : Cliquer sur une suggestion du champ de suggestion mène-t-il bien à la page remplacement de ce produit ?\n")
 
         self.setMoreThingsUp()
-
-        time.sleep(2000)
-
+        
         for search_target in ["form.input-group > input", "form.input-group-fake > input"]:
 
             for query, expect in self.expectations:
