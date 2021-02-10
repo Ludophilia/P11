@@ -33,4 +33,4 @@ Les données alimentaires indispensables à son bon fonctionnement sont gracieus
 
 ## Comment ça s'installe ?
 
-**Aucune installation est nécessaire**, l'app est accessible à l'adresse : https://purbeurre.space
+**Aucune installation est nécessaire**, l'app est accessible à l'adresse : https://pur11eurre.herokuapp.com
