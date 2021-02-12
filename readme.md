@@ -29,7 +29,7 @@ Les données alimentaires indispensables à son bon fonctionnement sont gracieus
 - et d'autres modules python à voir dans le pipfile ou requirements.txt (requests...)
 
 ### API : 
-- **OpenFoodFacts** pour remplir la base de données de donées alimentaires
+- **OpenFoodFacts** pour les données alimentaires
 
 ## Comment ça s'installe ?
 
