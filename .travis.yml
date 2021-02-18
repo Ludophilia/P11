@@ -14,7 +14,6 @@ addons:
   chrome: stable
 
 install:
-  - sudo apt install unzip
   - pip install -r tests/assistance/requirements-dev.txt
 
 env: 
