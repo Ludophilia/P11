@@ -6,7 +6,9 @@ from tests.assistance.frontend_tests import AssistanceClassForSLSTC
 @tag("t9")
 class TestAutocompleteFeature(AssistanceClassForSLSTC):
 
-    def setMoreThingsUp(self):
+    def setUp(self) -> None:
+
+        super().setUp()
 
         self.driver.get(f"{self.live_server_url}")
 
@@ -21,8 +23,6 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
     def test_if_the_autocomplete_feature_work_on_homepage_search_bar(self):
         
         print("\nTest 9 - (1/3) : Les suggestions de produits apparaissent-elles au niveau du champ de recherche en fonction des inputs utilisateur ?\n")
-
-        self.setMoreThingsUp()
 
         time.sleep(0.5)
         
@@ -40,8 +40,6 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
 
         print("\nTest 9 - (2/3) : Le champ de suggestion disparait-il bien quand le champ de recherche perd le focus ? Réapparait-il bien quand on remet le focus ?\n")
 
-        self.setMoreThingsUp()
-
         for search_input in self.search_inputs:
 
             for _ in range(2):
@@ -53,7 +51,7 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
                 self.assertEqual("autocomplete-items", self.f(".autocomplete-items").get_attribute("class"))
                 self.f("body").click()
 
-                time.sleep(0.5)
+                time.sleep(1.5)
                 
                 self.assertEqual("autocomplete-items d-none", self.f(".autocomplete-items").get_attribute("class"))
 
@@ -61,8 +59,6 @@ class TestAutocompleteFeature(AssistanceClassForSLSTC):
     def test_if_clicking_on_one_the_autocomplete_suggestion_lead_the_user_to_the_product(self):
         
         print("\nTest 9 - (3/3) : Cliquer sur une suggestion du champ de suggestion mène-t-il bien à la page remplacement de ce produit ?\n")
-
-        self.setMoreThingsUp()
         
         for search_target in ["form.input-group > input", "form.input-group-fake > input"]:
 

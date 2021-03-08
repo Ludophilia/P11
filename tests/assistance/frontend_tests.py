@@ -17,7 +17,7 @@ class AssistanceClassForSLSTC(StaticLiveServerTestCase):
 
         self.driver = ChromeDriverMgr.get_chromedriver(*("tux", "89.0.4389.23") if\
             os.environ.get("TEST_ENV") == "TRAVIS_CI" else ("mac", "89.0.4389.23"))
-        self.f, = self.driver.find_element_by_css_selector
+        self.f = self.driver.find_element_by_css_selector
         self.ff = self.driver.find_elements_by_css_selector
 
     def tearDown(self) -> None:
