@@ -11,13 +11,14 @@ from tests.assistance.backend_tests import AssistanceClassForTC
 
 class AssistanceClassForSLSTC(StaticLiveServerTestCase):
 
-    def setUp(self) -> None:
+    def setUp(self) -> None: #https://chromedriver.chromium.org/downloads
 
         AssistanceClassForTC().setUp()
 
-        self.driver = ChromeDriverMgr.get_chromedriver(*("tux", "87.0.4280.88") if os.environ.get("TEST_ENV") == "TRAVIS_CI" else ("mac", "87.0.4280.88"))
-
-        self.f, self.ff = self.driver.find_element_by_css_selector, self.driver.find_elements_by_css_selector
+        self.driver = ChromeDriverMgr.get_chromedriver(*("tux", "89.0.4389.23") if\
+            os.environ.get("TEST_ENV") == "TRAVIS_CI" else ("mac", "89.0.4389.23"))
+        self.f, = self.driver.find_element_by_css_selector
+        self.ff = self.driver.find_elements_by_css_selector
 
     def tearDown(self) -> None:
 

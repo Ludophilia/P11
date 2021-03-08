@@ -6,7 +6,7 @@ from selenium import webdriver
 class ChromeDriverMgr:
 
     @staticmethod
-    def get_chromedriver(os_name: str, version: str) -> webdriver:
+    def get_chromedriver(os_name: str, version: str) -> webdriver: #https://chromedriver.chromium.org/downloads
 
         """ Automatise le téléchargement du chromedriver et le renvoie pour utilisation """
         
@@ -17,7 +17,8 @@ class ChromeDriverMgr:
             
             ext = {"mac": "mac64", "win": "win32", "tux": "linux64"}.get(os_name)
             chromedriver_url = f"http://chromedriver.storage.googleapis.com/{version}/chromedriver_{ext}.zip"
-
+            
+            "http://chromedriver.storage.googleapis.com/89.0.4389.82/chromedriver_linux64.zip"
             wget.download(chromedriver_url, build_path("chromedriver.zip"))
 
             with zipfile.ZipFile(build_path("chromedriver.zip"), mode="r") as z:
