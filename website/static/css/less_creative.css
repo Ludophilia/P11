@@ -154,16 +154,23 @@ p.legal-text > a {
     top:40px; 
     right: 0px; 
     left: 0px;
-    border: 0.1px solid white;
+    border: 0.1px solid #ced4da;
 }
 
 form[class=input-group-fake] .autocomplete-items {
     width:96%;
 }
 
+@media (max-width: 991px) {
+    form[class=input-group-fake] .autocomplete-items {
+        width:98.5%;
+    }
+}
+
 .ac-item {
     text-align: left;
     padding: 6px 0.75rem;
+    cursor: pointer;
 }
 
 .ac-item:hover {
