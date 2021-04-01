@@ -153,7 +153,8 @@ p.legal-text > a {
     position: absolute; 
     top:40px; 
     right: 0px; 
-    left: 0px; 
+    left: 0px;
+    border: 0.1px solid white;
 }
 
 form[class=input-group-fake] .autocomplete-items {
